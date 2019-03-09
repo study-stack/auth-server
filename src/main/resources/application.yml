@@ -1,16 +1,13 @@
 spring:
   application:
-    name: ${springboot.app.name:auth-server}
+    name: stdstack-auth-server
 
 server:
-  port: 8084
+  port: 0
 
 eureka:
   client:
     serviceUrl:
-      default-url: http://stdstack-eureka-server:8761/eureka/
       defaultUrl: http://stdstack-eureka-server:8761/eureka/
       defaultZone: http://stdstack-eureka-server:8761/eureka/
-  instance:
-    prefer-ip-address: true
 
